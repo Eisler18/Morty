@@ -1,4 +1,4 @@
-`include "pc_tb.v"
+`include "pc_reg_tb.v"
 `include "../pc_reg.v"
 `include "../pc_add.v"
 `include "../pc_source.v"
