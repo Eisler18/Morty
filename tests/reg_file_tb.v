@@ -14,7 +14,7 @@ module testbench(
 		//testing read
 		read_addr_rs1 <= 5'd0; 
 		#1 if (data_rs1 == 0) begin 
-			$display("testing reading x0: passed"); 
+			$display("testing x0: passed"); 
 		end else begin 
 			$display("testing x0: failed, data_rs1 = %h", data_rs1); 
 		end 
@@ -27,9 +27,9 @@ module testbench(
 	       @(posedge clk) #1;	
 		read_addr_rs2 <= 5'd1; 
 		#1 if( data_rs2 == 7) begin
-			$display("testing writing x1: passed, data_rs2 = %h", data_rs2); 
+			$display("testing x1: passed, data_rs2 = %h", data_rs2); 
 		end else begin 
-			$display("testing writing x1: failed, data_rs2 = %h", data_rs2); 
+			$display("testing x1: failed, data_rs2 = %h", data_rs2); 
 		end
 	       $finish;	
 	end 

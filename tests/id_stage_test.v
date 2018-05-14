@@ -1,4 +1,4 @@
-`include "id_stage_tb.v"
+`include "./id_stage_tb.v"
 `include "../id_stage.v"
 
 module tb; 
